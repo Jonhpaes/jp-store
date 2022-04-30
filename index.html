@@ -1,0 +1,590 @@
+ <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Lanier Store</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo_lanierStore2.svg" alt="" class="nav__logo-icon" width="22px"> Lanier Store
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Destaque</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Produtos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">Novo</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== CARRINHO ====================-->
+        <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart__title-center">Meu Carrinho</h2>
+
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/mulher_camisa-branca01.svg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Camiseta Feminina</h3>
+                        <span class="cart__price">R$ 150</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/camisa_preta-1.svg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Camisa Masculina Preta</h3>
+                        <span class="cart__price">$150</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/camisa001.svg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Camiseta Nike Masculina</h3>
+                        <span class="cart__price">$180</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 items</span>
+                <span class="cart__prices-total">R$ 480</span>
+            </div>
+        </div>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="assets/img/home_nike.svg" alt="" class="home__img">
+                    </div>
+    
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/jonh.paz.102" target="_blank" class="home__social-link">
+                            Facebook
+                        </a>
+                        <a href="https://wa.me/message/FBXH2AOCTJA2K1" target="_blank" class="home__social-link">
+                            Whatsapp
+                        </a>
+                        <a href="https://www.instagram.com/jonhpaes_/" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+    
+                    <div class="home__data">
+                        <h1 class="home__title">NOVA CAMISA FEMININA <br> NIKE</h1>
+                        <p class="home__description">
+                            Não perca a chance e aproveite, produto bastante estiloso e muito confortável em qualquer ocasião.Não perca a chance e compre já!
+                        </p>
+                        <span class="home__price">R$ 245,00</span>
+
+                        <div class="home__btns">
+                            <a href="#" class="button button--gray button--small">
+                                SAIBA MAIS
+                            </a>
+
+                            <button class="button home__button">AICIONAR AO CARRINHO</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                    Destaque
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">Venda</span>
+
+                        <img src="assets/img/mulher_camisa-branca01.svg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Camiseta Feminina</h3>
+                            <span class="featured__price">R$ 150</span>
+                        </div>
+
+                        <button class="button featured__button">ADICIONAR AO CARRINHO</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Venda</span>
+
+                        <img src="assets/img/camisa_preta-1.svg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Camisa Masculina Preta</h3>
+                            <span class="featured__price">R$ 150</span>
+                        </div>
+
+                        <button class="button featured__button">ADICIONAR AO CARRINHO</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Venda</span>
+
+                        <img src="assets/img/camisa001.svg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Camiseta Nike Masculina</h3>
+                            <span class="featured__price">R$ 180</span>
+                        </div>
+
+                        <button class="button featured__button">ADICIONAR AO CARRINHO</button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            Novidade na Loja
+                        </h2>
+    
+                        <h1 class="story__title">
+                            Camisa Inspiradora<br> Desse Ano
+                        </h1>
+    
+                        <p class="story__description">
+                            O Santos FC é a mais nova parceria da nossa loja. Confira as camisas do clube em sua loja, clicando abaixo você será redirecionado para a loja Oficial do Santos FC.
+                        </p>
+    
+                        <a href="https://www.santosstore.com.br/" class="button button--small">Acessar</a>
+                    </div>
+
+                    <div class="story__images">
+                        <img src="assets/img/santos.jpg" alt="" class="story__img">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    Produtos
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="assets/img/adidas_inverno.svg" alt="" class="products__img">
+
+                        <h3 class="products__title">Adidas Inverno One</h3>
+                        <span class="products__price">R$ 300,00</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/adidas_inverno2.svg" alt="" class="products__img">
+
+                        <h3 class="products__title">Adidas Inverno Two</h3>
+                        <span class="products__price">R$ 350,00</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/adidas3.svg" alt="" class="products__img">
+
+                        <h3 class="products__title">Adidas Grey</h3>
+                        <span class="products__price">R$ 270,00</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/adidas_feminina.svg" alt="" class="products__img">
+
+                        <h3 class="products__title">Adidas White</h3>
+                        <span class="products__price">R$ 250,00</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/adidas_feminina2.svg" alt="" class="products__img">
+
+                        <h3 class="products__title">Adidas Pink</h3>
+                        <span class="products__price">R$ 250,00</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section container">
+                <div class="testimonial__container grid">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    A melhor loja de roupas do mundo, o atendimento é excelente, além das roupas serem muitas bonitas o tecido é maravilhoso!
+                                    <strong>#RecomendoLanierStore</strong>
+                                </p>
+                                <h3 class="testimonial__date">Abril 15. 2021</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/foto_perfil.svg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name"><a href="https://www.instagram.com/jonhpaes_/" class="perfil">@Jonhpaes_</a></span>
+                                        <span class="testimonial__perfil-detail">Dono de uma empresa</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Essa loja é inspiradora e muito confiavel, as entregas são muito rápido e os tecidos são maravilhosos, essa semana eu mesmo comprei 5 peças de roupas estou muito viciada em fazer compras na <strong>#LanierStore</strong>.
+                                </p>
+                                <h3 class="testimonial__date">Abril 16. 2021</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/foto_perfil2.svg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name"><a href="https://www.instagram.com/alanalima.ep/" class="perfil">@alanalima.ep</a></span>
+                                        <span class="testimonial__perfil-detail">Empresária</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Obrigado <strong>#LanierStore</strong> por existir, graças a vocês agora tenho roupas adequadas para frequentar a academia.
+                                </p>
+                                <h3 class="testimonial__date">Julho 9. 2021</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/foto_perfil3.svg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name"><a href="https://www.instagram.com/gabriel_paes2/" class="perfil">@gabriel_paes2</a></span>
+                                        <span class="testimonial__perfil-detail">Empresário</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-button-next">
+                            <i class='bx bx-right-arrow-alt' ></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-left-arrow-alt' ></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__images">
+                        <div class="testimonial__square"></div>
+                        <img src="assets/img/logo_lanierStore2.svg" alt="" class="testimonial__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section container" id="new">
+                <h2 class="section__title">
+                    Novas camisas de times
+                </h2>
+                
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">Novo</span>
+        
+                                <img src="assets/img/camisa_italia.svg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Camisa da Italia</h3>
+                                    <span class="new__price">R$ 380,00</span>
+                                </div>
+        
+                                <button class="button new__button">ADICIONAR AO CARRINHO</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">Novo</span>
+        
+                                <img src="assets/img/camisa_interM.svg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Camisa do Inter de Milão</h3>
+                                    <span class="new__price">R$ 280,00</span>
+                                </div>
+        
+                                <button class="button new__button">ADICIONAR AO CARRINHO</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">Exclusiva</span>
+        
+                                <img src="assets/img/camisa_santos.svg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Camisa do Santos FC</h3>
+                                    <span class="new__price">R$ 420,00</span>
+                                </div>
+        
+                                <button class="button new__button">ADICIONAR AO CARRINHO</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">Novo</span>
+        
+                                <img src="assets/img/camisa_dortmund.svg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Camisa do Dortmund</h3>
+                                    <span class="new__price">R$ 290,00</span>
+                                </div>
+        
+                                <button class="button new__button">ADICIONAR AO CARRINHO</button>
+                            </article>                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">Inscreva-se <br> agora</h2>
+                        <p class="newsletter__description">
+                            Não perca seus descontos. Inscreva-se em nosso e-mail 
+                            boletim informativo para obter as melhores ofertas, descontos, cupons, presentes e muito mais.
+                        </p>
+                    </div>
+
+                    <form action="" class="newsletter__subscribe">
+                        <input type="email" placeholder="Insira seu e-mail" class="newsletter__input">
+                        <button class="button">
+                            SUBSCREVER
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Nossas informações</h3>
+
+                    <ul class="footer__list">
+                        <li>Tuparetama-PE</li>
+                        <li>269 - Vila Bom Jesus</li>
+                        <li>+55 (87) 9-9643-7865</li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Parcerias</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.instagram.com/jonhpaes_/" class="footer__link">Santos FC</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jonhpaes_/" class="footer__link">Nike</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jonhpaes_/" class="footer__link">Puma</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jonhpaes_/" class="footer__link">Umbro</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jonhpaes_/" class="footer__link">Adidas</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Produtos</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.instagram.com/jonhpaes_/" class="footer__link">Camisas F/M</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jonhpaes_/" class="footer__link">Shorts</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jonhpaes_/" class="footer__link">Camisa de Times</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jonhpaes_/" class="footer__link">Acessorios Esportivos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/jonh.paz.102" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://wa.me/message/FBXH2AOCTJA2K1" target="_blank" class="footer__social-link">
+                            <i cla<i class="ri-whatsapp-fill"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/jonhpaes_/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; Jonh Alex Paz de Lima</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
