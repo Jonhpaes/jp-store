@@ -64,8 +64,10 @@
 <body>
     <form method="post" action="processa.php">
         <h3>Faça seu cadastro</h3>
-        <input id="email" type="text" name="email" placeholder="Seu e-mail..." />
-        <input id="senha" type="password" name="senha" placeholder="Sua senha..." />
+
+        <input id="email" type="text" name="email" placeholder="Seu e-mail..."  />
+
+        <input id="senha" type="password" name="senha" placeholder="Sua senha..."/>
 
         <input type="submit" name="acao" value="Cadastrar" />
     </form>
@@ -87,7 +89,27 @@
         senha.addEventListener('blur',()=>{
             senha.style.borderColor = "#ccc"
         });
+
         
+
+        /*Filtrar letras no email, para fazer o usuário ser obrigatório a usar apenas os caracteres dados pelo desenvolvedor.*/
+
+        var input = document.querySelector("#email");
+        input.addEventListener("keypress", function(e) {
+            if(!checkChar(e)) {
+            e.preventDefault();
+        }
+        });
+        function checkChar(e) {
+            var char = String.fromCharCode(e.keyCode);
+        
+        console.log(char);
+            var pattern = '[a-zA-Z0-9-.@_]';
+            if (char.match(pattern)) {
+            return true;
+        }
+        }
+                
     </script>
     
 </body>
