@@ -2,9 +2,9 @@
 
     include_once ("conexao.php");
 
-    $nome = $_POST["nome"];
-    $email = $_POST["email"];
-    $senha = $_POST["senha"];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
     $sql_cadastro = " INSERT INTO tb_user (nome,email,senha) VALUES ('$nome','$email','$senha')";
 
@@ -12,6 +12,7 @@
 
     $linha_afectada = mysqli_affected_rows($conector);
 
+    mysqli_close($conector);
 
 
 ?>

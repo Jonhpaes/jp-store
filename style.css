@@ -103,7 +103,7 @@ a{
 .btn-login {
     width: 100%;
     padding: 16px 0px;
-    margin: 25px;
+    margin: 0px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -118,10 +118,6 @@ a{
 }
 .btn-login:hover{
     background-color: #0b001f;
-}
-
-.link-site{
-    display: contents;
 }
 
 @media only screen and (max-width: 950px){
