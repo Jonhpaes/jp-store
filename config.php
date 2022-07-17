@@ -6,7 +6,7 @@
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $sql_cadastro = " INSERT INTO tb_user (nome,email,senha) VALUES ('$nome','$email','$senha')";
+    $sql_cadastro = " INSERT INTO tb_user (nome,email,senha) values ('$nome','$email','$senha')";
 
     $cadastro = mysqli_query($conector,$sql_cadastro);
 
