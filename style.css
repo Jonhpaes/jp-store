@@ -120,6 +120,10 @@ a{
     background-color: #0b001f;
 }
 
+.link-site{
+    display: contents;
+}
+
 @media only screen and (max-width: 950px){
     .card-login{
         width: 85%;

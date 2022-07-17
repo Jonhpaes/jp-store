@@ -17,6 +17,8 @@
 
      <!--=============== SWIPER CSS ===============--> 
      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+     
 </head>
 <body>
     <div class="main-login">
@@ -27,18 +29,27 @@
 
         <div class="right-login">
             <div class="card-login">
+
+                <form class="login-01" action="config.php" method="post"></form>
+                <hr>
+
                 <h1>LOGIN</h1>
                 <div class="textfield">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usauário">
+                    <label for="nome"><strong>Seu Nome</strong> (Opcional)</label>
+                    <input type="text" name="nome" placeholder="Nome" required>
                 </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
-                </div>
-                <button class="btn-login"><a href="index.html">ﾠﾠﾠﾠﾠﾠﾠﾠLoginﾠﾠﾠﾠﾠﾠﾠﾠ
 
-                </a></button>
+                <div class="textfield">
+                    <label for="usuario">Seu Email</label>
+                    <input type="text" name="usuario" placeholder="Email" required>
+                </div>
+
+                <div class="textfield">
+                    <label for="senha">Sua Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                </div>
+
+                <a class="link-site" href=index.html><input type="submit" value="login" class="btn-login"></a>
             </div>
         </div>
     </div>
