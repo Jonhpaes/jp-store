@@ -1,10 +1,11 @@
 <?php
 
-    $servidor = "http://localhost/phpmyadmin/index.php?route=/";
+    $servidor = "http://localhost/phpmyadmin/";
     $usuario = "root";
     $senha = "";
 
     $banco = "db_mysql";
+    $tabela = "tb_user";
 
 
 try{

@@ -13,4 +13,4 @@
     $cadastro = mysqli_query($conector, $sql_cadastro);
 
     mysqli_close($conector);
-    ?>
+?>
