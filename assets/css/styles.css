@@ -315,7 +315,7 @@ body.dark-theme {
 .home__img-bg {
   background-color: var(--first-color);
   width: 258px;
-  height: 430px;
+  height: 420px;
   padding-bottom: 2rem;
   display: flex;
   justify-content: center;
