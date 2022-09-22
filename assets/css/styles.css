@@ -309,13 +309,13 @@ body.dark-theme {
 }
 
 .home__img {
-  width: 240px;
+  height: 500px;
 }
 
 .home__img-bg {
   background-color: var(--first-color);
   width: 258px;
-  height: 420px;
+  height: 520px;
   padding-bottom: 2rem;
   display: flex;
   justify-content: center;
