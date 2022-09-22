@@ -144,3 +144,18 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+
+/* Preloader */
+
+function loader(){
+    document.querySelector('.loader').style.display = 'none';
+ }
+ 
+ function fadeOut(){
+    setInterval(loader, 2000);
+ }
+ 
+ window.onload = fadeOut;
